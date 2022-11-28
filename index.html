@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            border: solid 0.1em var(--color-secundary) ;
+        }
+        :root{
+            --color-primary: #5bd1bd;
+            --color-secundary:#00B1A7;
+            --color-bg:#A4EFE2;
+            --color-black:#041512;
+        }
+        .card_text{
+            font-family: 'Raleway', sans-serif;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border: solid 0.2em var(--color-secundary) ;
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:nth-child(2), .card:nth-child(3){
+            flex: 1 3 60%;
+        }
+        .card:first-child img{
+            object-position: top;
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_text{
+            display: flex;
+            flex-direction: column;
+            padding: 2em 0 0 0;
+            justify-content: baseline;
+            height: 100%;
+        }
+        .card_text h1{
+            font-size: 1.8em;
+            color: var(--color-secundary);
+            padding: 0 0 0.1em 0;
+            font-variant: small-caps;
+        }
+        .card_text h2{
+            justify-content: flex-start;
+            font-size: 1.2em;
+            color: var(--color-black);
+            font-weight: 700;
+            letter-spacing: 0.10em;
+            padding: 0 0 0.6em 0;
+            background-color:  rgb(80, 245, 190);
+        }
+        .card_text p{
+            padding: 1em 0 0 0;
+            font-weight: 100;
+            font-size: 1,25em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/1.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Bacchus and Ariadneca. 1740</h1>
+                    <h2>Giovanni Battista Tiepolo Italian</h2>
+                    <p>Giambattista Tiepolo was arguably the greatest painter of eighteenth-century Europe, celebrated for his grand decorative cycles in Venetian churches, and in the villas and palaces of Italy, Germany, and Spain. Tiepolo was equally prized as a draftsman, his powers of invention brilliant and prolific. "Bacchus and Ariadne" is one of Giambattista's most famous pen and wash drawings. It represents Bacchus with Ariadne and two members of his retinue, a putto and a satyr. As Ovid's mythology relates, Theseus abandons Ariadne on the island of Naxos, whereupon Bacchus rescues and marries her.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/2.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Bridge over a Pond of Water Lilies. 1899</h1>
+                    <h2>Claude Monet French</h2>
+                    <p>In 1893, Monet, a passionate horticulturist, purchased land with a pond near his property in Giverny, intending to build something "for the pleasure of the eye and also for motifs to paint." The result was his water-lily garden. In 1899, he began a series of eighteen views of the wooden footbridge over the pond, completing twelve paintings, including the present one, that summer. The vertical format of the picture, unusual in this series, gives prominence to the water lilies and their reflections on the pond.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/3.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>The Toilette of Venus. 1751</h1>
+                    <h2>François Boucher French</h2>
+                    <p>Boucher executed this painting for Madame de Pompadour, the powerful, official mistress of Louis XV and Boucher’s most significant patron from 1747 until her death in 1764. It originally decorated the bathing apartments (a luxurious suite of three rooms) in Pompadour’s Château de Bellevue. The construction of her château prompted many of the most important commissions of Rococo painting and sculpture. For a subject that became synonymous with both Boucher and Pompadour, the artist devised a summary of the movement’s key features: overt theatricality, voluptuous flesh, and an asymmetrical unfurling of luxurious furniture, fabric, flowers, and pearls.</p> 
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/4.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Ia Orana Maria (Hail Mary). 1891</h1>
+                    <h2>Paul Gauguin French</h2>
+                    <p>Before embarking on a series of pictures inspired by Polynesian religious beliefs, Gauguin devoted this, his first major Tahitian canvas, to a Christian theme, describing it in a letter of March 1892: "An angel with yellow wings reveals Mary and Jesus, both Tahitians, to two Tahitian women, nudes dressed in pareus, a sort of cotton cloth printed with flowers that can be draped from the waist. Very somber, mountainous background and flowering trees . . . a dark violet path and an emerald green foreground, with bananas on the left. I'm rather happy with it." Gauguin based much of the composition on a photograph he owned of a bas-relief in the Javanese temple of Borobudur.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/5.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>The Dance Class. 1874</h1>
+                    <h2>Edgar Degas French</h2>
+                    <p>This work and its variant in the Musée d'Orsay, Paris, represent the most ambitious paintings Degas devoted to the theme of the dance. Some twenty-four women, ballerinas and their mothers, wait while a dancer executes an "attitude" for her examination. Jules Perrot, a famous ballet master, conducts the class. The imaginary scene is set in a rehearsal room in the old Paris Opéra, which had recently burned to the ground. On the wall beside the mirror, a poster for Rossini’s Guillaume Tell pays tribute to the singer Jean-Baptiste Faure, who commissioned the picture and lent it to the 1876 Impressionist exhibition.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/6.jfif" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Geisha and Attendant on a Rainy Nightca. 1797</h1>
+                    <h2>Kitagawa Utamaro Japanese</h2>
+                    <p>The huge form of an umbrella accentuates the half-length figures of a geisha and her maid, carrying a shamisen case. It is night, and they walk into the driving rain. The heavy, steady rain is rendered in fine ink lines over the background of darkness, bisected by an angular swath of soft light from the lantern.Utamaro, a prolific ukiyo-e artist, was fascinated by themes of daily life as well as by beautiful women.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
